@@ -1,0 +1,120 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background-color: #f4f7d9; /* Soft light yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Gradient background */
+    width: 80%;
+    max-width: 800px; /* Keeps the container compact */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #2a57b8; /* Main title color */
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+h1 span {
+    display: block;
+    color: #ff6347; /* Contrast color for emphasis */
+    font-size: 54px; /* Make the "Birthday" text stand out */
+    font-weight: bold;
+}
+
+.details {
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.date, .theme-title, .location-title {
+    margin: 15px 0;
+}
+
+.theme-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 20px 0; /* Spacing above and below the list */
+    text-align: left; /* Align lists to the left for clarity */
+}
+
+.theme-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.map {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    border: 2px dashed #ff6347; /* Dashed border for fun */
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff; /* White background inside map area */
+}
+
+.dog-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.dog-image img {
+    width: 180px; /* Size for the dog image */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for image emphasis */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+.dog-image img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h1 span {
+        font-size: 42px;
+    }
+
+    .dog-image {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .dog-image img {
+        width: 150px; /* Smaller image on mobile */
+    }
+
+    .theme-list {
+        padding-left: 0; /* Reset padding for mobile */
+    }
+}
